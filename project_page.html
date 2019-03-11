@@ -7,18 +7,21 @@
 
 
 <body>
-
- 
 <header></header>
 
-<div class = "Right"></div>
 
-<!--<button class = "btn" ><</button>-->
+<!-- swipe buttons-->
+<button class = "button" onclick="nextSlide(-1)" style="top: 50%; left: 20px; transform: translate(-0%, -50%);">
+    <div class = "arrow" style="transform: rotate(135deg); left: 35%; "></div>
+</button>
+<button class = "button" onclick="nextSlide(+1)" style="top: 50%; right: 20px; transform: translate(-0%, -50%);">
+    <div class = "arrow" style="transform: rotate(-45deg); left: 25%; "></div>
+</button>
 
-
-<section class="mySLides" style="background-image: url(images/major_01.jpg);">
-
-</section>
+<!--image content-->
+<section class="mySLides" style="background-image: url(images/major_01.jpg);"></section>
+<section class="mySLides" style="background-image: url(images/major_02.jpg);"></section>
+<section class="mySLides" style="background-image: url(images/major_03.jpg);"></section>
 
 <footer></footer>
 

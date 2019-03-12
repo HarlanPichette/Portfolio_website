@@ -1,0 +1,45 @@
+body, .slide_show{
+position: absolute;
+width:100%;
+height:100%;
+margin: 0;
+padding: 0;
+font-family: Arial, Helvetica, sans-serif;
+background: black;
+z-index: 0;
+}
+
+.slide{
+position: absolute;
+width: 100%;
+height:100%;  
+margin: 0;
+padding: 0;
+background-size: cover;
+background-position : 50% 50%;
+background-repeat: no-repeat;
+z-index: 1;
+transition: all 2s linear;
+
+}
+
+.slide_01{background-image: url('../images/major_01.jpg')}
+.slide_02{background-image: url('../images/major_02.jpg')}
+.slide_03{background-image: url('../images/major_03.jpg')}
+
+.arrow{
+cursor: pointer;
+position: absolute;
+top: 45%;
+width:60px;
+height: 60px;
+border: solid;
+border-width: 1px 1px 1px 1px;
+border-color: white white transparent transparent;
+z-index: 2;
+}
+
+#arrow-left{ left:50px; transform: rotate(225deg);}
+#arrow-right{ right:50px; transform: rotate(45deg);}
+
+

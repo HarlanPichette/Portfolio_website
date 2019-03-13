@@ -55,83 +55,8 @@ padding: 10px 30px;
 }
 
 
-/* Portfolio ------------------------------------------------- */
-
-#portfolio {
-    /* Prevent vertical gaps */
-    line-height: 0;
-     
-    -webkit-column-count: 5;
-    -webkit-column-gap:   0px;
-    -moz-column-count:    5;
-    -moz-column-gap:      0px;
-    column-count:         5;
-    column-gap:           0px;  
-  }
-  
-
-#portfolio div{ 
-
-background: no-repeat; 
-background-position : 50% 50%;
-background-size: cover;
-margin: 0px;
-padding: 0px 0px;
-padding-bottom: 70%;
--webkit-column-break-inside: avoid;
-page-break-inside: avoid;
-break-inside: avoid-column; 
-display: table;
-width: 100%;
-}
-
-/*
-#portfolio img {
-    position: relative;
-    width: 100% !important;
-    height: auto;
-    object-fit: cover;
-  } 
-*/
 
 
-  @media (max-width: 1200px) {
-     #portfolio{
-    -moz-column-count:    4;
-    -webkit-column-count: 4;
-    column-count:         4;
-    }
-  }
-  @media (max-width: 1000px) {
-    #portfolio {
-    -moz-column-count:    3;
-    -webkit-column-count: 3;
-    column-count:         3;
-    }
-  }
-  @media (max-width: 800px) {
-    #portfolio {
-    -moz-column-count:    2;
-    -webkit-column-count: 2;
-    column-count:         2;
-    }
-  }
-  @media (max-width: 400px) {
-    #portfolio {
-    -moz-column-count:    1;
-    -webkit-column-count: 1;
-    column-count:         1;
-    }
-  }
-
-/* Project example 01 ------------------------------------------------- */
-
-#project_images{
-background: gold;
-width: 100%;
-height: 100%;
-position: absolute;
-}
 
 
 

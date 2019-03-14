@@ -1,0 +1,90 @@
+
+.left_panel{
+    background: transparent;
+    min-height: 600px;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 80px;
+    width: 25%;
+    word-wrap: break-word; 
+    }
+    
+.right_panel{
+        background: transparent;
+        min-height: 600px;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        right: 0;
+        top: 80px;
+        width: 75%;
+    }
+    
+    .title{
+        background: transparent;
+        left: 30px;
+        font-size: 20px;
+        margin: 0;
+        padding: 0px 0px 0px 0px;
+        position: absolute;
+        top: 142px; 
+    }
+
+    .fields, .information{
+        background: transparent;
+        font-size: 15px;        
+        margin: 0;
+        padding: 0px 0px 0px 0px;
+        position: absolute;
+        top: 202px;
+        text-align:left; 
+    }
+
+    .fields{font-weight: bold; left: 30px;}
+    .information{left: 150px; }
+
+form{
+    position: absolute;
+    width: 700px;
+    top: 200px;
+    left: 30px;
+}  
+
+input, textarea{
+    position: relative;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+    color: black;
+    font-size: 15px;
+    margin-bottom: 20px;
+    outline: none;
+    width: 600px;
+}
+
+input{height: 20px;}
+textarea{ height: 60px;}
+input::placeholder {color:gray; font-size: 15px;}
+textarea::placeholder {color:gray; font-size: 15px; font-family: Arial, Helvetica, sans-serif;}
+
+button{
+    position: relative;
+    background:black;
+    border: 1px solid black;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    height: 30px;
+    margin-bottom: 20px;
+    outline: none;
+    width: 605px;
+}
+
+
+
+
+
+    
+

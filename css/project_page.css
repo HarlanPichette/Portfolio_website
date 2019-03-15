@@ -54,9 +54,9 @@ position: relative;
     margin: 0;
 }
 
-#slide_00{background-image: url('../images/major_01.jpg')}
-#slide_01{background-image: url('../images/major_02.jpg')}
-#slide_02{background-image: url('../images/major_03.jpg')}
+#slide_00{background-image: url('../images/major_project/major_01.jpg')}
+#slide_01{background-image: url('../images/major_project/major_02.jpg')}
+#slide_02{background-image: url('../images/major_project/major_03.jpg')}
 
 iframe{
 position: relative;

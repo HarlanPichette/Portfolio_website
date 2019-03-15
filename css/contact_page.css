@@ -1,71 +1,83 @@
+/*--CONTACT--*/
 
-.left_panel{
-    background: transparent;
-    min-height: 600px;
-    left: 0;
+.wrapper{
+    background: red;
+    display: flex;
+    flex-direction: row;
+    margin: 0px 0px 0px 0px;
+    min-height: 100px;
+    padding: 0px 0px 0px 0px;
+    position: static;
+    width: 100%;
+}
+
+.panel-01{
+    background: purple;
+    display: flex;
+    flex:1;
+    flex-direction: column;
+    margin: 0px;
+    min-height: 400px;
+    min-width: 300px;
+    order:1;
+    padding: 20px 30px 30px 30px;
+    }
+
+.panel-01 .panel-03{
+    background: cyan;
+    display: flex;
+    flex:2;
+    flex-direction: row;
+    height: 100%;
+    margin: 0;
+    order:1;
+    padding: 0;  
+    width: 100%; 
+}
+
+.panel-01 .panel-03 p{
+    line-height: 35px;
+    background: red;
     margin: 0;
     padding: 0;
-    position: absolute;
-    top: 80px;
-    width: 25%;
-    word-wrap: break-word; 
+}
+
+.fields{font-weight: bold;}
+
+.panel-02{
+    background: green;
+    display: flex;
+    flex:2;
+    flex-direction: column;
+    margin: 0px;
+    min-height: 400px;
+    order:2;
+    padding: 20px 100px 0px 30px;
+    text-align:left; 
+    word-wrap: break-word;
     }
     
-.right_panel{
-        background: transparent;
-        min-height: 600px;
-        margin: 0;
-        padding: 0;
-        position: absolute;
-        right: 0;
-        top: 80px;
-        width: 75%;
-    }
-    
-    .title{
-        background: transparent;
-        left: 30px;
-        font-size: 20px;
-        margin: 0;
-        padding: 0px 0px 0px 0px;
-        position: absolute;
-        top: 142px; 
-    }
-
-    .fields, .information{
-        background: transparent;
-        font-size: 15px;        
-        margin: 0;
-        padding: 0px 0px 0px 0px;
-        position: absolute;
-        top: 202px;
-        text-align:left; 
-    }
-
-    .fields{font-weight: bold; left: 30px;}
-    .information{left: 150px; }
-
 form{
-    position: absolute;
-    width: 700px;
-    top: 200px;
-    left: 30px;
+    background: yellow;
+    padding: 0;
+    margin: 0px;
+    max-width: 600px;
+    position: relative;
 }  
 
 input, textarea{
     position: relative;
-    background: transparent;
     border: none;
     border-bottom: 2px solid black;
     color: black;
     font-size: 15px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    width: 100%;
     outline: none;
-    width: 600px;
 }
 
 input{height: 20px;}
-textarea{ height: 60px;}
+textarea{ height: 60px; width: 99.5%;}
 input::placeholder {color:gray; font-size: 15px;}
 textarea::placeholder {color:gray; font-size: 15px; font-family: Arial, Helvetica, sans-serif;}
 
@@ -79,8 +91,39 @@ button{
     height: 30px;
     margin-bottom: 20px;
     outline: none;
-    width: 605px;
+    width: 100%;
 }
+footer{ position: absolute;}
+
+
+@media(max-width: 800px){
+    .wrapper{ 
+    flex-direction: column;
+    
+    }
+    .panel-01{ 
+        order: 2;
+        height: 250px;
+        text-align: center;
+        padding: 20px 100px 20px 100px; 
+    }
+    
+    .panel-02{
+        order: 1; 
+        height: 250px;
+        text-align: center;
+        padding: 20px 100px 20px 100px;
+    }
+
+footer{position: relative;}
+
+    }
+    
+
+
+
+
+
 
 
 

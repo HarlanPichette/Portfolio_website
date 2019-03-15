@@ -55,6 +55,8 @@ font-size: 20px;
 top: 50%;
 }
 
+footer{ position: absolute;}
+
 .container:hover .overlay { opacity: 1;}
 
   /*@media (max-width: 1200px) {

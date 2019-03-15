@@ -8,37 +8,62 @@
 </head>
 
 <body>
-    <header> 
-        <h2>Contact</h2> 
-        <nav>
-                <ul>
-                    <li><a href="index.html">Portfolio</a> </li>
-                    <li><a id="current_link" href="contact.html">Contact</a> </li>
-                    <li><a href="https://github.com/HarlanPichette?tab=repositories">GitHub</a></li>
-                </ul>
-            </nav>
-    </header>
+        <header>
+                <h1>Harlan Pichette</h1>
+                    <nav>
+                            <a href="index.html" >Portfolio</a> 
+                            <a id="current_link" href="contact.html">Contact</a> 
+                            <a href="https://github.com/HarlanPichette?tab=repositories">GitHub</a>
+                    </nav>
+        </header>
 
+<div class="wrapper">
+    <div class="panel-01">
+        <h2>Contact Information</h2>
+        <div class="panel-03">
+        
+        <p class = "fields">Address:<br>Email:<br>Phone:<br>LinkedIn:<br> </p>
+        <p class = "information">Medina Parade, North Coogee WA 6163<br>h.s.pichette@gmail.com<br>0424 777 202<br>
+        
+        </div>
+        </div>
 
-    <div class="left_panel">  
-        <h1 class="title">Contact Information</h1>
-        <p class = "fields">Address:<br><br><br><br>Email:<br><br>Phone:<br><br>LinkedIn:<br><br> </p>
-        <p class = "information">Medina Parade,<br> North Coogee WA 6163 <br><br><br>h.s.pichette@gmail.com <br><br>0424 777 202 <br><br></p>
+    <div class="panel-02">
+            <h2>Get in touch</h2>
+            
+            <form class="contact-form" action="contactform.php" method="post">
+                    <input type="text" name="name" placeholder="Your name" required>
+                    <input type="text" name="mail" placeholder="Your e-mail" required>
+                    <input type="text" name="subject" placeholder="subject" required>
+                    <textarea name="message" placeholder="message" required></textarea>
+                    <button type="submit" name="submit">Send Message</button>
+            </form>
+        
     </div>
-    
-    <div class="right_panel">
-        <h1 class="title">Get in touch</h1>
-
-<form class="contact-form" action="contactform.php" method="post">
-        <input type="text" name="name" placeholder="Your name" required>
-        <input type="text" name="mail" placeholder="Your e-mail" required>
-        <input type="text" name="subject" placeholder="subject" required>
-        <textarea name="message" placeholder="message" required></textarea>
-        <button type="submit" name="submit">Send Message</button>
-</form>
-
-
 </div>
+        
+<!--
+        
+
+    </div>
+-->   
+
+
+
+    
+<!--
+
+-->
+
+
+
+
+
+
+
+
+
+
 <footer>footer</footer>
 </body>
 </html>

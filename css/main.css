@@ -32,6 +32,7 @@
    flex-direction: row;
    margin: 0;
    min-height: 80px;
+   min-width: 400px;
    padding: 0;
    }
    
@@ -75,13 +76,13 @@
     width: 100%;
     }
 
-   
+
    a:hover { text-decoration: underline; color: var(--text-highlight-color);}
    #current_link { text-decoration: underline; color: var(--text-highlight-color); }
    
-   
    @media(max-width: 800px){
-   header{ flex-direction: column; }
+   header{ flex-direction: column;  
+}
    h1{  
        text-align: center;
        padding: 20px 0px 20px 0px;

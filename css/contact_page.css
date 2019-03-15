@@ -1,7 +1,6 @@
 /*--CONTACT--*/
 
 .wrapper{
-    background: red;
     display: flex;
     flex-direction: row;
     margin: 0px 0px 0px 0px;
@@ -11,24 +10,24 @@
     width: 100%;
 }
 
+h2{padding: 0px 0px 25px 0px;}
+
 .panel-01{
-    background: purple;
     display: flex;
     flex:1;
     flex-direction: column;
     margin: 0px;
-    min-height: 400px;
-    min-width: 300px;
+    min-width: 400px;
     order:1;
     padding: 20px 30px 30px 30px;
     }
 
 .panel-01 .panel-03{
-    background: cyan;
     display: flex;
     flex:2;
     flex-direction: row;
     height: 100%;
+    justify-content: space-between;
     margin: 0;
     order:1;
     padding: 0;  
@@ -36,8 +35,8 @@
 }
 
 .panel-01 .panel-03 p{
+    flex-basis: 47%;
     line-height: 35px;
-    background: red;
     margin: 0;
     padding: 0;
 }
@@ -45,12 +44,11 @@
 .fields{font-weight: bold;}
 
 .panel-02{
-    background: green;
     display: flex;
     flex:2;
     flex-direction: column;
     margin: 0px;
-    min-height: 400px;
+    min-width: 400px;
     order:2;
     padding: 20px 100px 0px 30px;
     text-align:left; 
@@ -58,7 +56,6 @@
     }
     
 form{
-    background: yellow;
     padding: 0;
     margin: 0px;
     max-width: 600px;
@@ -74,6 +71,14 @@ input, textarea{
     margin-bottom: 30px;
     width: 100%;
     outline: none;
+}
+
+button:hover { 
+    text-decoration: none; 
+    transition: .5s ease;
+    color: var(--text-highlight-color);
+    background: white;
+    border: 0px;
 }
 
 input{height: 20px;}
@@ -97,21 +102,20 @@ footer{ position: absolute;}
 
 
 @media(max-width: 800px){
-    .wrapper{ 
-    flex-direction: column;
-    
-    }
+
+    .wrapper{  flex-direction: column;}
+
+    h2{text-align: center;}
+
     .panel-01{ 
         order: 2;
-        height: 250px;
-        text-align: center;
+        min-height: 400px;
         padding: 20px 100px 20px 100px; 
     }
     
     .panel-02{
         order: 1; 
-        height: 250px;
-        text-align: center;
+        min-height: 200px;
         padding: 20px 100px 20px 100px;
     }
 

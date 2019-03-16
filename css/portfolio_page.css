@@ -20,6 +20,9 @@
     display: table;
     width: 100%;
     z-index: 1;
+
+
+    
     -webkit-column-break-inside: avoid;
     page-break-inside: avoid;
     break-inside: avoid-column; 

@@ -29,13 +29,17 @@
 }
 
 .inner-text-div{
+
     flex:1;
-    height:400px;
+    min-height:200px;
+    max-height: 400px;
+    left: 0px;
     margin: 0px;
     order:1;
-    padding: 20px 40px 0px 30px;
+    padding: 20px 40px 30px 30px;
     position:sticky;
     text-align:justify; 
+
     top:0px;
     word-wrap: break-word; 
 }
@@ -57,7 +61,7 @@ flex-direction: column;
 }
 .inner-text-div{
     order: 1; 
-     height: 250px;
+    min-height: 250px;
     position: static;
     text-align: center;
 }

@@ -1,0 +1,46 @@
+body, div{margin: 0; padding: 0;}
+
+.wrapper{
+width: 100%;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-auto-rows:  1fr;
+}
+
+.container{
+    position: relative;
+    border: solid black 1px;
+    width: 100%;
+    padding-bottom: 60%;
+    z-index: 0;
+}
+
+
+.images, .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.images{
+    background-image: url('../images/major_project/major_01.jpg');
+    background-position: 50% 50%;
+    background-size: cover; 
+    z-index: 1;
+}
+
+.overlay{ 
+    background:white;     
+    opacity: 0;
+    transition: .5s ease;
+    z-index: 2; 
+}
+
+.container:hover .overlay { opacity: 1;}
+
+
+@media (max-width: 1200px) {.wrapper { grid-template-columns: 1fr 1fr 1fr;} }
+
+@media (max-width: 800px) {.wrapper { grid-template-columns: 1fr 1fr;} }
+
+@media (max-width: 600px) {.wrapper { grid-template-columns: 1fr;} }
